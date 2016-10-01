@@ -1,0 +1,82 @@
+.grid {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+.grid2 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px !important;
+    padding-left: 4px !important;
+    padding-top: 8px !important;
+}
+footer {
+    background-color: #262626;
+    color: #ffffff;
+}
+.caption {
+    color: #2b2b2b !important;
+    background-color: #e8e8e8;
+    font-weight: bold;
+    padding-right:0!important;
+    margin-right:0px !important;
+}
+.item {
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: solid 1px;
+    border-color: #dcdcde;
+}
+.item-title {
+    display: table-cell;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px;
+    line-height: 1.8px;
+
+}
+.item-title a {
+    color: black;
+}
+.item-description {
+    display: table-cell;
+    padding-left: 15px;
+    margin-left: 5px;
+    text-space: 4;
+    font-size: 12px;
+    text-align: justify;
+    text-justify: inter-word
+}
+.item-company {
+    font-size:11px;
+}
+.item-badges {
+    font-size: 10px;
+}
+.item-country {
+    padding: 2px;
+    color: #b5b5b5;
+    font-size:11px;
+}
+.item-contact {
+    display: table-cell;
+    padding-left:66px;
+    padding-top: 15px;
+}
+.item-contac--button {
+    background-color: #f5a037 !important;
+    color: white;
+}
+.item-description-list {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    padding: 8px;
+}
+.rfq {
+    padding: 15px;
+    background-color: #FBF9F9;
+}
+.rfq-title {
+    font-size: 16px;
+    font-weight: bold;
+    display: table-cell;
+}
