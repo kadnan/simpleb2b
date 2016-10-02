@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('status');
             $table->enum('current_package',['free', 'premium']);
-            $table->dateTime('last_login');
+            $table->dateTime('last_login')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
