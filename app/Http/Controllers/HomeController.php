@@ -10,12 +10,16 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $entries = [];
-        $entries[] = ['title' => 'I want to buy clothes','url' => 'http://example.com'];
-        $entries[] = ['title' => 'I want to buy shows','url' => 'http://example.com'];
+        $latest_sell_offers = [];
+        $latest_products = [];
+
+        $latest_sell_offers[] = ['title' => 'I want to buy clothes', 'url' => 'http://example.com'];
+        $latest_sell_offers[] = ['title' => 'I want to buy shows', 'url' => 'http://example.com'];
+
+        $latest_products[] = ['title' => 'Raw Cashew Nuts', 'url' => 'http://example.com'];
+        $latest_products[] = ['title' => 'High Quality Coconuts', 'url' => 'http://example.com'];
         return view('home')
-            ->with('entries',$entries)
-            ->with('title_latest_product','Latest Products')
-            ->with('title_latest_buyoffers','Latest BuyOffers');
+            ->with('latest_sell_offers', $latest_sell_offers)
+            ->with('latest_products', $latest_products);
     }
 }
