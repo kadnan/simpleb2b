@@ -54,3 +54,38 @@ $factory->define(App\SellOffer::class, function (Faker\Generator $faker) {
         'validity_date' => $faker->dateTimeThisMonth
     ];
 });
+
+$factory->define(App\Product::class, function (Faker\Generator $faker) {
+
+    //$result = DB::table('pr')->truncate();
+
+    //Find User
+    $result = DB::table('users')->where('first_name', 'Adnan')->first();
+    $user_id = $result->id;
+
+    //constructing images Array
+    $images = [
+        $faker->imageUrl(),
+        $faker->imageUrl()
+    ];
+    $color = $faker->colorName;
+    $min_qty = ['value' => $faker->randomNumber(), 'unit' => 'ton'];
+
+    $supply_ability = ['value' => $faker->numberBetween(5000, 10000), 'unit' => 'ton'];
+
+    return [
+        'user_id' => $user_id,
+        'title' => 'Product ' . $color . ' BOX related to Agriculture',
+        'description' => $faker->text,
+        'images' => json_encode($images),
+        'specs' => $color . ', Box',
+        'fob_min' => $faker->numberBetween(1, 10),
+        'fob_max' => $faker->numberBetween(100, 200),
+        'supply_ability' => json_encode($supply_ability),
+        'delivery' => $faker->text(20),
+        'package_details' => $faker->text(30),
+        'min_qty' => json_encode($min_qty),
+        'payment_type' => 'paypal',
+        'supply_ability' => json_encode($min_qty),
+    ];
+});
