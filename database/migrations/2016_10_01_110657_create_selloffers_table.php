@@ -19,14 +19,14 @@ class CreateSelloffersTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->text('keywords');
-            $table->json('images');
+            $table->text('images');
 
             $table->double('fob_min');
             $table->double('fob_max');
-            $table->json('supply_ability');
+            $table->text('supply_ability');
             $table->text('delivery')->nullable();
             $table->text('package_details')->nullable();
-            $table->json('min_order_qty');
+            $table->text('min_order_qty');
 
             $table->dateTime('validity_date');
             $table->timestamps();

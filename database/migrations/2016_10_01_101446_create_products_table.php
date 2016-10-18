@@ -20,11 +20,11 @@ class CreateProductsTable extends Migration
             $table->longText('description')->nullable();
             $table->json('images');
             $table->text('specs')->nullable();
-            $table->json('min_qty');
+            $table->text('min_qty');
             $table->double('fob_min');
             $table->double('fob_max');
             $table->enum('payment_type',['paypal','wu','cc','bank']);
-            $table->json('supply_ability');
+            $table->text('supply_ability');
             $table->text('delivery')->nullable();
             $table->text('package_details')->nullable();
             $table->timestamps();
