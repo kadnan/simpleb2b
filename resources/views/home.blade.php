@@ -26,10 +26,10 @@
                 <!--Latest Sell offers and Products-->
                 <div class="row large-margin-top hidden-xs">
                     <div class="col-md-5 col-md-offset-1">
-                        @include('partials._latest',['title' => "Latest Products",'entries' => $latest_sell_offers])
+                        @include('partials._latest',['title' => "Latest Products",'entries' => $latest_products])
                     </div>
                     <div style="margin-left: -20px;" class="col-md-5">
-                        @include('partials._latest',['title' => "Latest Buy Offers",'entries' => $latest_products])
+                        @include('partials._latest',['title' => "Latest Buy Offers",'entries' =>  $latest_sell_offers])
                     </div>
                 </div>
                 <!--Trade Shows-->
