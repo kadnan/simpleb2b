@@ -14,4 +14,5 @@ class ProductTableSedder extends Seeder
         //$result = DB::table('products')->truncate();
         $products = factory(App\Product::class, 5)->create();
     }
+
 }
