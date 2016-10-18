@@ -24,7 +24,6 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 
 $factory->define(App\SellOffer::class, function (Faker\Generator $faker) {
 
-    $result = DB::table('selloffers')->truncate();
 
     //Find User
     $result = DB::table('users')->where('first_name', 'Adnan')->first();
