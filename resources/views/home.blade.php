@@ -4,16 +4,11 @@
     <div class="row medium-margin-top">
         <div class="col-md-2">
             <ul class="list-group">
+
                 <li  class="list-group-item" style="background-color: #222222;color: white;">Categories</li>
-                <li  class="list-group-item" ><a title="Agriculture" href="categories.html">Agriculture</a></li>
-                <li  class="list-group-item" ><a title="Clothing" href="categories.html">Clothing</a></li>
-                <li  class="list-group-item" ><a title="Automobiles" href="categories.html">Automobiles</a></li><li  class="list-group-item" ><a title="Agriculture" href="#">Agriculture</a></li>
-                <li  class="list-group-item" ><a title="Clothing" href="categories.html">Clothing</a></li>
-                <li  class="list-group-item" ><a title="Automobiles" href="categories.html">Automobiles</a></li><li  class="list-group-item" ><a title="Agriculture" href="#">Agriculture</a></li>
-                <li  class="list-group-item" ><a title="Clothing" href="categories.html">Clothing</a></li>
-                <li  class="list-group-item" ><a title="Automobiles" href="categories.html">Automobiles</a></li><li  class="list-group-item" ><a title="Agriculture" href="#">Agriculture</a></li>
-                <li  class="list-group-item" ><a title="Clothing" href="categories.html">Clothing</a></li>
-                <li  class="list-group-item" ><a title="Automobiles" href="categories.html">Automobiles</a></li>
+                @foreach($categories as $category)
+                    <li  class="list-group-item" ><a title="Agriculture" href="categories.html">{!! $category->name !!}</a></li>
+                @endforeach
             </ul>
         </div>
         <!--Mid Portion-->
